@@ -1,0 +1,20 @@
+body {
+  line-height: 1.4;
+  margin: 3em;
+  /* Step 1:  First make all the text on the page #00CC99 */
+  /* And change the font-family to Georgia, sans-serif */
+
+
+}
+
+/* Step 2: Make all the anchors on the page #FFA7C0 (pink)*/
+
+
+/* Step 3: Then make the anchors within the header nav #D16121 (orange)*/
+
+
+/* Step 4: Lastly, make the anchors in the footer nav #FFE540 (yellow) */
+
+
+/* Bonus: Make "Nested Selectors" #009CAA (blue) */
+/* Hint: look at the structure in your HTML */

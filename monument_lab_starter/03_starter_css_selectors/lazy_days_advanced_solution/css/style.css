@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Spectral:400,400i');
+
+/* -----------------------------------------------
+GENERAL
+-------------------------------------------------*/
+body {
+	font-family: "Spectral", serif;
+	font-size: 20px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+}
+
+
+/* -----------------------------------------------
+TYPOGRAPHY
+-------------------------------------------------*/
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+h3 {
+	margin-top: 0;
+	font-style: italic;
+	font-size: 22px;
+	text-align: center;
+}
+
+hr {
+	margin: 20px auto;
+	max-width: 800px;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 10px;
+	color: #333;
+}
+
+/* -----------------------------------------------
+HEADER
+-------------------------------------------------*/
+header {
+	background-color: #FCEE21;
+	padding: 40px;
+	margin-bottom: 50px;
+}
+
+nav {
+	text-align: center;
+}
+
+a {
+	border-bottom: 2px solid #333;
+	padding-bottom: 2px;
+}
+
+/* -----------------------------------------------
+ARTICLE
+-------------------------------------------------*/
+article {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	margin: 30px auto;
+}
+
+/* -----------------------------------------------
+FOOTER
+-------------------------------------------------*/
+footer {
+	background-color: #FCEE21;
+	padding: 10px 20px;
+}
+
+footer p {
+	max-width: 800px;
+	margin: 10px auto;
+}
