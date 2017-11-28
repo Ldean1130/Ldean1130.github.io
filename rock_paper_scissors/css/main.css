@@ -1,0 +1,69 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: #FCFBE3;
+  color: #EA6045;
+  margin: 3em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+button {
+  background: #EA6045;
+  color: white;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 10px 15px;
+  font-size: .9em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin: 5px;
+  width: 150px;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+  border-radius: 4px;
+}
+
+button:active,
+button:hover {
+  background: #FCFBE3;
+  color: #EA6045;
+  border: 2px solid #EA6045;
+}
+
+.scoreboard {
+  width: 14em;
+  margin: 40px auto;
+  border: 2px solid #EA6045;
+  border-radius: 4px;
+}
+.scoreboard h2 {
+  border-bottom: 2px solid #EA6045;
+  margin: 0;
+  padding: 10px;
+}
+.scoreboard table {
+  margin: 10px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.scoreboard th, .scoreboard td {
+  text-align: center;
+}
+.scoreboard td {
+  font-size: 3em;
+  padding: 0 20px;
+}
+
+#status {
+  margin-top: 20px;
+}
