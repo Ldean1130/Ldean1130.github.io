@@ -9,66 +9,120 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  <!-- Add your site content here. Keep it pretty and use indentation :) -->
-
+<!-- Add your site content here. Keep it pretty and use indentation :) -->
+<body class="Cookie-page">
   <!-- HINT: Need to link to another page? Create a file with an html extension in your main project folder. -->
   <!-- Then link to it using an anchor. for example: <a href="blog.html">Blog</a> -->
   <header>
-    <div>
-      <h1><a href="index.html">LeftPathCookies</a></h1>
-    </div>
-  </header>
-    <nav>
-      <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
-    <ul>
-      <li><a href="index.html#order">Order</a> </li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#products">Products</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
+		<div>
+			<h1><a href="index.html">LeftPathCookieCo</a></h1>
+	 	</div>
+  	</header>
+      	<nav>
+          <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
+          <a href="index.html#order">Order</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#cookies">Cookies</a>
+      		<a href="blog.html">Blog</a>
+      		<a href="index.html#contact">Contact</a>
+      	</nav>
 
-  </nav>
-  <div class="wrap grid-wrapper">
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/cookies1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/cookies1.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/cookies1.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</br>
+  <main class="wrap">
+    <div>
+      <aside>
+      <h2> Cookies, metal and milk </h2>
+        <img src="img/PentagramCookies-2.jpg" alt="">
+        <p>Horns up it's cookie time... </p>
+          <button type="Order">Order</button>
+        </aside>
+      </div>
+    <div>
+    <article>
+      <img src="images/blog_2.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius soluta incidunt, eum quos consequuntur aliquam nobis velit mollitia iste, natus ex repellendus delectus quisquam et quae, in atque a. Perspiciatis excepturi ipsum temporibus, eius odit deleniti quasi voluptates eaque aliquam, iste consequatur repudiandae illo a. Voluptates eligendi reiciendis corporis itaque soluta fugit atque quaerat ipsum reprehenderit sapiente, voluptatem repellat eveniet fuga natus tempore modi vero distinctio nulla accusantium recusandae, omnis. Esse aliquam ea, similique repudiandae nihil numquam, neque enim perspiciatis. Facilis dolor praesentium impedit quidem, non unde accusantium, commodi error, soluta dolores modi blanditiis similique amet hic earum, reiciendis consectetur animi in. Exercitationem distinctio necessitatibus molestias quas laboriosam nam modi porro accusantium blanditiis, beatae incidunt aliquid nostrum laborum, magni cum recusandae autem doloremque qui perferendis iste non quaerat fugit. Aspernatur voluptatem impedit, enim!</p>
+    </article>
+  </div>
+    <div class="wrap grid-wrapper">
     <section>
       <article>
-        <img src="" alt="">
+        <h2> Because you need this...</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
-  <aside>
-    <h2> Because you need this...</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </aside>
-
-<section>
-  <section id="about" class="callout about">
-		<div class="wrap">
-			<h2>About Left Path Cookies</h2>
-      <h3>Just the right amount of bad...</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut itaque facere quibusdam rerum, maiores consequuntur, aliquam esse blanditiis eum a libero fuga consectetur non neque amet rem impedit quos, fugit. Culpa ratione iure facilis est ea, ducimus neque voluptas fugiat velit unde ipsam suscipit laudantium cupiditate, officiis eaque id? Eaque ad, nisi assumenda facere qui accusantium alias, fugit adipisci natus.</p>
-			<p>Dignissimos quasi nisi maiores dolor sunt. Fuga unde, rem quo sint dolore est pariatur cupiditate nostrum et suscipit, aperiam aliquam officia libero vel error modi ratione, dolorem consectetur doloribus mollitia! Temporibus aliquid laboriosam expedita quia, id consectetur culpa? Enim iusto ab facere aliquid cumque aut amet tenetur dolores, iure tempora perspiciatis incidunt eveniet nostrum, ea esse doloribus labore unde nobis?</p>
-		</div>
+    </section>
+    <section id="gallery">
+  		<div class="wrap">
+  			<h2>Cookies</h2>
+			<div class="grid-wrapper">
+  				<div>
+  					<img src="img/cookies1.jpg" alt="">
+  					<img src="img/cookies1.jpg" alt="">
+  				</div>
+  				<div>
+  					<img src="img/cookies1.jpg" alt="">
+  					<img src="img/cookies1.jpg." alt="">
+  				</div>
+  				<div>
+  					<img src="img/cookies1.jpg" alt="">
+  					<img src="img/cookies1.jpg" alt="">
+  		<		</div>
+  			</div>
 	</section>
-</section>
-
-  <script src="js/jquery-1.12.0.min.js"></script>
-  <script src="js/main.js"></script>
+  <section id="about" class="callout about">
+    		<div class="wrap">
+    			<h2>About Left Path Cookies</h2>
+          <h3>Just the right amount of bad...</h3>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut itaque facere quibusdam rerum, maiores consequuntur, aliquam esse blanditiis eum a libero fuga consectetur non neque amet rem impedit quos, fugit. Culpa ratione iure facilis est ea, ducimus neque voluptas fugiat velit unde ipsam suscipit laudantium cupiditate, officiis eaque id? Eaque ad, nisi assumenda facere qui accusantium alias, fugit adipisci natus.</p>
+    			<p>Dignissimos quasi nisi maiores dolor sunt. Fuga unde, rem quo sint dolore est pariatur cupiditate nostrum et suscipit, aperiam aliquam officia libero vel error modi ratione, dolorem consectetur doloribus mollitia! Temporibus aliquid laboriosam expedita quia, id consectetur culpa? Enim iusto ab facere aliquid cumque aut amet tenetur dolores, iure tempora perspiciatis incidunt eveniet nostrum, ea esse doloribus labore unde nobis?</p>
+    		</div>
+    	</section>
+</div>
 
 <footer>
   <div class="wrap">
-    <div class="social-links">
-      <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <div class="social-links">
+        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </div>
-  </div>
-  <input type="text" placeholder="Email Address">
-  <button type="submit">Subscribe</button>
-</div>
+      <input type="text" placeholder="Email Address">
+      <button type="submit">Subscribe</button>
+    </div>
+</footer>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
