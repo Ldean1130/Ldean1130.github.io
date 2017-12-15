@@ -123,7 +123,6 @@ Buttons
    width: auto;
    padding: 5px;
    margin-top: -140px;
-   margin-bottom: 20px;
    color: white;
    font-weight: bold;
    font-size: 60px;
@@ -132,7 +131,7 @@ Buttons
  }
 #previous:hover, #next:hover {
   color:#8d2663;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 600;
   font-family: 'Nunito', sans-serif;
   cursor: pointer;
@@ -147,20 +146,20 @@ Buttons
 #previous {
   border-radius: 3px 0 0 3px;
   left:0;
-  margin-left:14%;
+  margin-left:17%;
 }
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
+  cursor:pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: 0.6s ease;
-
+  transition: background-color 0.6s ease;
 }
+
 
 .active, .dot:hover {
   background-color:#8d2663;
@@ -205,10 +204,10 @@ Buttons
 /*-----------------
 JS Carousel
 -----------------*/
+
 /*-----------
 JS Image overlay
 ---------------*/
-
 
 
 
@@ -227,10 +226,7 @@ Hero slot
 .hero-grid-wrapper {
     	display: -webkit-box;
     	display: -ms-flexbox;
-    	display: flexbox;
-      padding: 10px;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      padding: 30px;
       grid-column: 1fr 1fr;
     	grid-column-gap: 10px;
      -webkit-box-orient: horizontal;
@@ -311,7 +307,7 @@ about
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 70px;
+
 
   }
   .callout p {
@@ -354,22 +350,31 @@ about
 /*-------------
 parallax
 ----------------*/
-.parallax-1,
-.parallax-2,
-.parallax-3,
-.parallax-4 {
+.parallax-1 {
     /* The image used */
     background-image: url('../img/PentagramCookies-2.jpg');
 
     /* Set a specific height */
     max-height: 100%;
-
+}
 
     /* Create the parallax scrolling effect */
+.parallax-1
+{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.parallax-2
+
+{
+ background-image: url(https://images.vice.com/munchies/wp_upload/PentagramCookies-3.jpg?resize=1000:*);
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 
 }
 
