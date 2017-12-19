@@ -204,6 +204,7 @@ Buttons
   font-weight: 600;
   color:#8d2663 !important;
 }
+
 /*-----------------
 JS Carousel
 -----------------*/
@@ -254,7 +255,7 @@ Hero slot
 
   .slider {
     width: 60%;
-    height:60%;
+    height:65%;
     margin-right: 20px;
   }
     /*--------------
@@ -268,16 +269,18 @@ Hero slot
       background-color:hsl(120, 100%, 0%);
       z-index: 100;
       left:20%;
+      bottom: 15%;
 
     }
     aside h3 {
       text-align: center;
       font-family:'Roboto';
       font-weight: 600;
-      font-size: 20px;
+      font-size: 22px;
       margin:auto;
-      padding-top: 5%;
-      padding-left: 5%;
+      padding-top: 6%;
+      padding-left: 2%;
+      padding-right: 2%;
 
     }
    aside button {
@@ -288,7 +291,8 @@ Hero slot
     cursor: pointer;
     color: black;
     position: relative;
-    left: 37%;
+    left: 30%;
+    margin-right: 2%;
 
 
     }
@@ -300,8 +304,8 @@ aside button:hover
     }
     aside p{
     text-align: center;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
 
 
   }
@@ -419,31 +423,33 @@ section {
     z-index: 999;
     box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.2) !important;
     }
-    .img-title {
-      position: absolute;
-      top: 35%;
-      left:0;
-      right:0;
-      margin: 0 auto;
-      height: 100%;
-      width: 100%;
-      text-align: center;
-      color:white;
-      font-size: 25px;
+  .img-title {
+    position: absolute;
+    top: 35%;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    font-weight: 600;
       /*opacity: 0;*/
        /* display:none;
        comment this out for CSS hover */
       /*transition: all 0.5s ease;*/
   }
 
-      .img-title h5 {
-        color: white;
-          text-align: center;
-        opacity: 0;
+  .img-title h5 {
+  color: white;
+  text-align: center;
+  opacity: 0;
+  text: bolder;
       }
-  .cookie-grid-wrapper > div:hover h5 {
-    opacity: 1;
-  }
+.cookie-grid-wrapper > div:hover h5 {
+  opacity: 1;
+}
 /*-------------
 parallax
 ----------------*/
@@ -565,21 +571,25 @@ h1 a
  display: block;
  background-color: #2d2d2d;
  text-align: left;
+ font-size: 10px;
 }
 
   .hamburger {
   text-align: left;
   display: block;
+  font-size: 24px;
   }
 .menu-open {
   max-height: 300px;
   transform: translateX(0);
 }
-.scrolled {
-  font-size: 2px;
+.scrolled a {
+  font-size: 15px;
 }
+
 #previous,
-#next
+#next,
+.dots
 {
   display: none;
 }

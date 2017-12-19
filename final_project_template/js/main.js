@@ -90,7 +90,7 @@ console.log('check baby, check baby, 1,2,3,4... ' + $backgrounds );
       var yPos = $contentObj.__fgOffset - scrollTop / $contentObj.__speed;
 
       $contentObj.css('top', yPos);
-    })
+    });
 
     $backgrounds.forEach(function($backgroundObj) {
       var yPos = -((scrollTop - $backgroundObj.__fgOffset) / $backgroundObj.__speed);
@@ -103,7 +103,7 @@ console.log('check baby, check baby, 1,2,3,4... ' + $backgrounds );
 
   // triggers winodw scroll for refresh
   $fwindow.trigger('scroll');
-};
+}
 
 var windowWidth = $(window).innerWidth();
 if (windowWidth > 700) {
@@ -124,7 +124,7 @@ $(window).on('resize', function () {
 
 
 $('.hamburger').on('click', function () {
-  
+
   $('.page-links').toggleClass('menu-open');
 });
 
