@@ -121,9 +121,11 @@ $(window).on('resize', function () {
 /* Hamburger menu
 
 ----------------*/
-$('.hamburger-icon').on('click', function (e) {
-  e.preventDefault();
-  $(this).toggleClass('active');
+
+
+$('.hamburger').on('click', function () {
+  
+  $('.page-links').toggleClass('menu-open');
 });
 
 
@@ -162,7 +164,6 @@ $(document).keydown(function(e) {
 
     // Add your own easter egg here!!
     //Fade in the image
-
-
+$('body').fadeIn ('img/source.gif');
   }
 });

@@ -277,6 +277,7 @@ Hero slot
       font-size: 20px;
       margin:auto;
       padding-top: 5%;
+      padding-left: 5%;
 
     }
    aside button {
@@ -538,24 +539,48 @@ responsive
 
 @media screen and (max-width:750px) {
 .hero-grid-wrapper,
-.wrap,
 .slider,
 .hero-text
- aside
+ aside,
+ h1 a
  {
   width:auto;
   height: auto;
   display: block;
   text-align: left;
   }
-h1 {
-  font-size: 5px;
+h1 a
+{
+  font-size: 20px;
 }
 *.page-links {
-  height: 0;
+  max-height: 0;
   display: block;
+  transform: translateX(-100);
+  background-color: #2d2d2d;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
 }
-#previous{
+.page-links a {
+ display: block;
+ background-color: #2d2d2d;
+ text-align: left;
+}
+
+  .hamburger {
+  text-align: left;
+  display: block;
+  }
+.menu-open {
+  max-height: 300px;
+  transform: translateX(0);
+}
+.scrolled {
+  font-size: 2px;
+}
+#previous,
+#next
+{
   display: none;
 }
 .cookie-grid-wrapper{
@@ -585,43 +610,74 @@ font-size: 11px;
 
 @media screen and (max width: 375px) {
   .hero-grid-wrapper,
-   .wrap,
-   .hero-text,
-   .slider
-   aside
+  .slider,
+  .hero-text
+   aside,
+   h1 a
    {
     width:auto;
     height: auto;
     display: block;
     text-align: left;
-
+    }
+  h1 a
+  {
+    font-size: 20px;
   }
-
-  h1 {
-  font-size: 2px;
-  }
-
   *.page-links {
-    height:0;
+    max-height: 0;
+    display: block;
+    transform: translateX(-100);
+    background-color: #2d2d2d;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
   }
+  .page-links a {
+   display: block;
+   background-color: #2d2d2d;
+   text-align: left;
+  }
+
+    .hamburger {
+    text-align: left;
+    display: block;
+    }
+  .menu-open {
+    max-height: 300px;
+    transform: translateX(0);
+  }
+  .scrolled {
+    font-size: 2px;
+  }
+  #previous,
+  #next
+  {
+    display: none;
+  }
+  .cookie-grid-wrapper{
+    width:auto;
+    height:auto;
+  }
+
     .hamburger {
     text-align: left;
     display: block;
     }
 
-  footer input,
-  footer button,
-  footer input {
-  display: block;
+    footer input,
+    footer button,
+    footer input {
+    display: block;
+    width: 75%;
+    margin: 0 auto 10px;
+    }
+  .social-links {
+  display:inline-block;
   width: 100%;
+  text-align: left;
+  font-size: 11px;
 
   }
-  .social-links {
-    display:inline-block;
-    width: 100%;
-    text-align: left;
-    font-size: 2px;
-}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
