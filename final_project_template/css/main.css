@@ -493,18 +493,17 @@ footer
 --------------*/
 
 footer {
-    	padding-top: 30px;
-    	padding-bottom: 30px;
+    	padding-top: 2%;
+    	padding-bottom:2%;
     	background-color: black;
       margin: 0 auto;
     }
 .social-links a {
-    	font-size: 30px;
-    	margin-bottom: 15px;
-    	margin-top: 15px;
-      margin-right: 60px;
-      margin-left: 175px;
-    	display: inline-block;
+      font-size: 25px;
+      text-align: center;
+      display: inline-block;
+      left:60%;
+      padding-left: 10%;
     	color:#C0C0C0;
     }
 
@@ -512,14 +511,17 @@ footer {
     Forms
     ------------------------------------------- */
     input {
-    	margin-bottom: 12px;
-    	margin-right: 60px;
-      margin-left: 260px;
-    	padding: 11px 10px;
+    	margin-bottom: 15px;
+      text-align: center;
+      display: inline-block;
+      margin-left:28%;
+      padding-left:30%;
+      padding-right: 10%;
+      padding:10px;
     	outline: 0;
-    	width: 300px;
+    	max-width: 300px;
     	border: 0;
-    	text-align: center;
+
     }
 
     ::-webkit-input-placeholder {
