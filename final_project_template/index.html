@@ -27,70 +27,98 @@
         <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
         <div class="page-links">
           <a href="index.html#order">Order</a>
-          <a href="index.html#about">About</a>
-          <a href="index.html#cookies">Cookies</a>
+          <a href="#about">About</a>
+          <a href="#cookies">Cookies</a>
       		<a href="blog.html">Blog</a>
       		<a href="index.html#contact">Contact</a>
         </div>
     </nav>
-
 <main>
-<div class="parallax-1"data-type="background" data-speed="5">
-    <div class= "hero-grid-wrapper wrap slider">
-          <div><img src="img/cookies1.jpg" alt=""></div>
-          <div><img src="img/cookies1.jpg"alt="" ></div>
-          <div><img src="img/cookies1.jpg" alt=""></div>
-          <div>
-            <a id="previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next"onclick="plusSlides(1)">&#10095;</a>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
+<div class="parallax-1" data-type="background" data-speed="2">
+    <div class= "hero-grid-wrapper wrap">
+      <div class="slider">
+        <section>
+          <div><img src="img/cookies.jpg" alt="cookie1"></div>
+          <div><img src="img/cookies.jpg" alt="cookie2" ></div>
+          <div><img src="img/cookies.jpg" alt="cookie3"></div>
+            <div class= "slider-nav">
+              <a id="previous" onclick="plusSlides(-1)">&#10094;</a>
+              <a id="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+                <div id="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-      <aside>
-              <h3>Gimme sum cookie...</h3> <br>
-              <button type="Order">Order</button>
-              <p>When you are too old to go to jail for having fun,<br>
-               these cookies are the right amount of bad in your life.</p>
-          </aside>
         </div>
-    </div>
-    <div>
-        <section id="special" class="special">
-             <h2>What do Mayhem, WASP and Black Sabbath have in common?</h2>
-              <p> Nuthin... <br>
-                But it's Tuesday-- so eat <code>cookies</code> for dinner </p>
-      	</section>
+      </section>
+        <aside>
+            <div>
+            <h3>Gimme sum cookie...</h3><br>
+            <button type="order">Order</button><br>
+            <p>When you are too old to go to jail for having fun,</p>
+             <p>these cookies are the right amount of bad in your life.</p>
+           </div>
+           </aside>
+        </div>
       </div>
 
-      <div class="parallax-2" data-type="background" data-speed="3">
-
-          <section id="cookies"  class="wrap">
-            <div class ='cookie-grid-wrapper'>
-            	<img src="img/cookies1.jpg" alt="cookie">
-              <img src="img/cookies1.jpg" alt="">
-              <img src="img/cookies1.jpg" alt="">
-      				<img src="img/cookies1.jpg" alt="">
-      				<img src="img/cookies1.jpg." alt="">
-              <img src="img/cookies1.jpg" alt="">
-        	 </div>
-        </section>
-       </div>
-    <div>
-      <section id="about" class="callout">
-          <h2>About</h2>
-              <p> So one day after, missing Entombed play a show playing the entire Wolverine Blues and bits of Left Hand Path bc I was stuck at work;
-              I thought to myself that album title would be a perfect name for a company</p>
-              <p> Which leads me to the next bit that baking is my super hobby, alongside music, and these two things have
-              been defining points throughout my entire life.</p>
-              <p>What the hell? Why not combine the two?</p>
-              <p> So bust out with your best faded black band tee </p>
-              <p>(I promise, I won't judge)</p>
-              <p> Turn the music up just loud enough to annoy the neighbors and eat lots and lots of cookies...</p>
-        </section>
-      </div>
+  <div>
+    <section id="special" class="special">
+       <h2>What do Mayhem, WASP and Black Sabbath have in common?</h2>
+        <p> Nuthin... <br>
+          But it's <code>Tuesday</code>-- so eat <code>cookies</code> for dinner </p>
+      </section>
+  </div>
+  <div class="parallax-2" data-type="background" data-speed="3">
+      <section id="cookies"  class="wrap">
+        <div class ='cookie-grid-wrapper'>
+          <div><img src="img/cookies1.jpg" alt="cookie1">
+            <figcaption class="img-title">
+               <h5>Image Title</h5>
+            </figcaption></div>
+          <div><img src="img/cookies1.jpg" alt="cookie2">
+            <figcaption class="img-title">
+              <h5>Image Title</h5>
+            </figcaption></div>
+          <div><img src="img/cookies1.jpg" alt="cookie3">
+          <figcaption class="img-title">
+              <h5>Image Title</h5>
+          </figcaption></div>
+        <div><img src="img/cookies1.jpg" alt="cookie4">
+         <figcaption class="img-title">
+          <h5>Image Title</h5>
+          </figcaption></div>
+        <div><img src="img/cookies1.jpg" alt="cookie5">
+          <figcaption class="img-title">
+             <h5>Image Title</h5>
+           </figcaption></div>
+        <div><img src="img/cookies1.jpg" alt="cookie6">
+            <figcaption class="img-title">
+              <h5>Image Title</h5>
+            </figcaption></div>
+        </div>
+      </section>
+     </div>
+<div>
+  <section id="about" class="callout">
+        <h2>About</h2>
+          <p> One day while stuck at work, missing Entombed play a show playing the entire Wolverine Blues and bits of Left Hand Path bc I was stuck at work;
+          I thought to myself that album title would be a perfect name for a company</p>
+          <input id="toggle" type="checkbox" checked>
+          <label for="toggle">read more, if you wanna...</label>
+          <div id="expand">
+          <section>
+            <p> Which leads me to the next bit that baking is my super hobby, alongside music, and these two things have
+            been defining points throughout my entire life.</p>
+            <p>What the hell? Why not combine the two?</p>
+            <p> So bust out with your best faded black band tee </p>
+            <p>(I promise, I won't judge)</p>
+            <p> Turn the music up just loud enough to annoy the neighbors and eat lots and lots of cookies...</p>
+          </section>
+          </div>
+    </section>
+  </div>
  </main>
 <footer>
   <div class="wrap">
@@ -104,7 +132,7 @@
       </div>
   </footer>
     <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
-    </div>
-</body>
+  </body>
 </html>
