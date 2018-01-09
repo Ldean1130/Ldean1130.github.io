@@ -4,7 +4,7 @@
 $(window).on('scroll', function () {
 var distanceScrolled = $(window).scrollTop();
 console.log('The distance scrolled is: ' + distanceScrolled);
-if (distanceScrolled > 45) {
+if (distanceScrolled > 50) {
 $('nav').addClass('scrolled');
 } else {
 $('nav').removeClass('scrolled');
@@ -50,9 +50,8 @@ $('#previous').on('click', function() {
       currentImage +=1;}
       $('.slider img').eq(currentImage).fadeIn(300);
    });
-
+  
 });
-
 
 
 // makes the parallax elements
@@ -68,7 +67,7 @@ console.log('check baby, check baby, 1,2,3,4... ' + $backgrounds );
   $('[data-type="content"]').each(function(index, e) {
     var $contentObj = $(this);
 
-    $contentObj.__speed = ($contentObj.data('speed') || 2);
+    $contentObj.__speed = ($contentObj.data('speed') || 3);
     $contentObj.__fgOffset = $contentObj.offset().top;
     $contents.push($contentObj);
   });
@@ -77,7 +76,7 @@ console.log('check baby, check baby, 1,2,3,4... ' + $backgrounds );
   $('[data-type="background"]').each(function() {
     var $backgroundObj = $(this);
 
-    $backgroundObj.__speed = ($backgroundObj.data('speed') || 3);
+    $backgroundObj.__speed = ($backgroundObj.data('speed') || 4);
     $backgroundObj.__fgOffset = $backgroundObj.offset().top;
     $backgrounds.push($backgroundObj);
   });
@@ -116,23 +115,14 @@ $(window).on('resize', function () {
   }
 });
 
-
-
 /* Hamburger menu
 
 ----------------*/
-
-
 $('.hamburger').on('click', function () {
 
   $('.page-links').toggleClass('menu-open');
 });
-
-
 /*-------------
-
-
-
 /* nav
 ---------------*/
 // Do it when someone clicks a nav link
@@ -151,10 +141,59 @@ $('nav a').on('click', function(e) {
   }, 500);
 
 });
+/* Scroll to Top */
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 70) {
+        $('#return-to-top').fadeIn(200);
+    } else {
+        $('#return-to-top').fadeOut(200);
+    }
+});
+$('#return-to-top').click(function() {
+    $('body,html').animate({
+        scrollTop : 0
+    }, 500);
+});
+/*
+show more/ show less
+---------------------*/
+$(document).ready(function() {
+  // Configure/customize these variables.
+  var showChar = 150;  // How many characters are shown by default
+  var ellipsestext = "...";
+  var moretext = "Tell me more...";
+  var lesstext = "Nah, I'm good, close it...";
+$('.more').each(function() {
+  var content = $(this).html();
+  if(content.length > showChar) {
+  var c = content.substr(0, showChar);
+  var h = content.substr(showChar, content.length - showChar);
+  var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+  $(this).html(html);
+      }
+  });
+ $(".morelink").click(function(){
+      if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+      } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+      }
+      $(this).parent().prev().toggle();
+      $(this).prev().toggle();
+      return false;
+    });
+});
+
+
+
+
+
 
 /* KONAMI
 -----------------*/
-var kkeys = [];
+/*var kkeys = [];
 var konami = "38,38,40,40,37,39,37,39,66,65";
 
 $(document).keydown(function(e) {
@@ -167,3 +206,4 @@ $(document).keydown(function(e) {
 $('body').fadeIn ('img/source.gif');
   }
 });
+*/
